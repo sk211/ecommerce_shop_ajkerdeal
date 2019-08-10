@@ -1,0 +1,19 @@
+div#logo_change {
+    margin-top: 42px;
+    margin-left: 35px;
+}
+section.content-header {
+    padding-top: 29px;
+    padding-bottom: 20px;
+}
+
+div#order_list {
+    padding-left: 20px;
+}
+button.btn.btn-primary.btn-lg.mb-5 {
+    margin-bottom: 16px;
+}
+nav#praganation {
+    display: flex;
+    justify-content: center;
+}
