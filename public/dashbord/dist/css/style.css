@@ -17,3 +17,6 @@ nav#praganation {
     display: flex;
     justify-content: center;
 }
+a#navbarDropdown {
+    color: #fff;
+}

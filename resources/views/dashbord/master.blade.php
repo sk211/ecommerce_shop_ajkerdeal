@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +36,16 @@
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  
   <![endif]-->
+  <script src="{{ asset('js/app.js') }}" defer></script>
+
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -58,21 +65,25 @@
             <!-- Content Header (Page header) -->
             <section class="content-header mb-5">
               <h1>
-                Dashboard
+                @yield('das_title')
                 <small>Control panel</small>
               </h1>
               <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                 <li class="active">Dashboard</li>
               </ol>
+            
+
             </section>
         
             <!-- Main content -->
-
-            @yield('profile')
+            <main class="py-3">
+              @yield('content')
+           </main>
             
             <!-- /.content -->
           </div>
+          
           <!-- /.content-wrapper -->
           <footer class="main-footer">
             <div class="pull-right hidden-xs">
@@ -89,6 +100,8 @@
           <div class="control-sidebar-bg"></div>
         </div>
         <!-- wrapper -->
+        
+        
         
         
         

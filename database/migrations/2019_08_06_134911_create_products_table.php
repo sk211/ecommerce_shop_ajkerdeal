@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->integer('categores_id');
             $table->integer('brands_id');
             $table->string('title');
-            $table->string('desc')->nullable();
+            $table->string('desc');
             $table->string('slug');
             $table->integer('quantity')->default(1);
             $table->integer('price');

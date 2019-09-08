@@ -35,7 +35,7 @@ Route::get('/checkout', 'FrontController@checkout');
 Route::get('/seller', 'FrontController@seller');
 Route::get('/4o4', 'FrontController@4o4');
 Route::get('/payment', 'FrontController@payment');
-Route::get('/contact', 'FrontController@contact');
+Route::get('/contract', 'FrontController@contact');
 
 
 // roust for Dashbord
@@ -49,7 +49,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // add categories route
 
-Route::get('/addCats', ' AddController@index');
+
+Route::get('/allcates', 'AllCategory@index');
+Route::get('/profile', 'UserController@index');
+Route::get('/addCates', 'UserController@addcate');
+Route::post('/addCates', 'AddController2@store')->name('store');
 
 
 
